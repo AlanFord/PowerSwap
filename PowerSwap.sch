@@ -78,7 +78,9 @@ F 0 "D1" H 6845 3245 50  0000 L CNN
 F 1 "Schottky" H 6615 3085 50  0000 L CNN
 F 2 "Diodes_SMD:SMA_Handsoldering" V 6895 3165 50  0001 C CNN
 F 3 "http://www.mccsemi.com/up_pdf/SK32A-SK310A(HSMA).PDF" V 6895 3165 50  0001 C CNN
-F 4 "SK310A-TP" H 6895 3165 60  0001 C CNN "MPN"
+F 4 "Value" H 6895 3165 60  0001 C CNN "Fieldname"
+F 5 "SK310A-TP" H 6895 3165 60  0001 C CNN "MPN"
+F 6 "3A" H 6880 3020 50  0000 C CNN "Current"
 	1    6895 3165
 	-1   0    0    -1  
 $EndComp
@@ -123,6 +125,8 @@ F 0 "C5" H 6855 4370 50  0000 L CNN
 F 1 "820p" H 6855 4170 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6868 4120 50  0001 C CNN
 F 3 "" H 6830 4270 50  0000 C CNN
+F 4 "Value" H 6830 4270 60  0001 C CNN "Fieldname"
+F 5 "25V" H 6925 4095 50  0000 C CNN "Voltage"
 	1    6830 4270
 	1    0    0    -1  
 $EndComp
@@ -134,6 +138,8 @@ F 0 "C4" H 6520 4300 50  0000 L CNN
 F 1 "100n" H 6520 4100 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6533 4050 50  0001 C CNN
 F 3 "" H 6495 4200 50  0000 C CNN
+F 4 "Value" H 6495 4200 60  0001 C CNN "Fieldname"
+F 5 "6.3V" H 6600 4035 50  0000 C CNN "Voltage"
 	1    6495 4200
 	1    0    0    -1  
 $EndComp
@@ -156,6 +162,8 @@ F 0 "C2" H 4590 3540 50  0000 L CNN
 F 1 "10u" H 4590 3340 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4603 3290 50  0001 C CNN
 F 3 "" H 4565 3440 50  0000 C CNN
+F 4 "Value" H 4565 3440 60  0001 C CNN "Fieldname"
+F 5 "10V" H 4655 3270 50  0000 C CNN "Voltage"
 	1    4565 3440
 	1    0    0    -1  
 $EndComp
@@ -388,6 +396,8 @@ F 0 "C1" H 4340 3540 50  0000 L CNN
 F 1 "10u" H 4340 3340 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4353 3290 50  0001 C CNN
 F 3 "" H 4315 3440 50  0000 C CNN
+F 4 "Value" H 4315 3440 60  0001 C CNN "Fieldname"
+F 5 "10V" H 4405 3270 50  0000 C CNN "Voltage"
 	1    4315 3440
 	1    0    0    -1  
 $EndComp
@@ -510,4 +520,6 @@ Wire Wire Line
 	8205 3890 8205 4010
 Text Label 6360 2930 0    60   ~ 0
 SW
+Text Notes 8315 2735 0    60   ~ 0
+VinMin = 3V\nVinMax = 4.2V\nVout = 6V\nIout = 0.75A
 $EndSCHEMATC
